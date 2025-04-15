@@ -1,0 +1,131 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <style>
+
+        *{
+            padding: 0;
+
+            margin: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        body{
+
+            height: 100vh;
+
+            width: 100%;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background-color: skyblue;
+
+        }
+
+        form{
+
+            height: 400px;
+
+            width: 300px;
+         box-shadow: 2px 2px 5px grey;
+
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: space-evenly;
+
+            background-color: white;
+
+​
+
+        }
+
+        input{
+         height: 40px;
+
+            width: 80%;
+        padding-left: 10px;
+
+            border-radius: 5px;
+            border: 1px solid grey;
+
+            font-size: 18px;
+        }
+
+        input::placeholder{
+
+            font-size: 16px;
+
+        }
+
+​
+
+        button{
+            height: 40px;
+
+            width: 80%;
+
+            border-radius: 20px;
+
+            border: none;
+
+            color: white;
+
+            background-color: blue;
+
+}
+
+​
+
+    </style>
+
+</head>
+
+<body>
+
+  <form action="/Register-form-data" method="POST">
+
+    <h2>Register Form</h2>
+
+    <input type="text" placeholder="Enter Name" name="name" required>
+
+    <input type="email" placeholder="Enter Email" name="email" required>
+
+    <input type="number" placeholder="Enter Phone Number" name="phonenumber">
+
+    <input type="text" placeholder="Enter Company" name="company">
+
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button>Register</button>
+    <p>New User, Create Acccount? <a href="/login">login</a></p>
+
+  </form>
+
+</body>
+</html>
+
+
+
+
+
+
